@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("log",name)
 
         var log = findViewById<EditText>(R.id.pasBox)
-        if(log.text.toString() != "")
+        var pas = findViewById<EditText>(R.id.nameBox)
+        if(log.text.toString() != "" && pas.text.toString() != "")
         {
             startActivity(intent)
         }
